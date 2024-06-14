@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Scroll View to enable scrolling the contents-->
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg"
+    tools:context="com.sonitayoeurn.card_quiz_game_tilloop1.ShowResult">
+
+    <!--        Constraint layout inside scrollview - elements are placed with constraints-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sonitayoeurn.card_quiz_game_tilloop1.ShowResult"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/tvScore"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnStat"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/fgMaroon"
+        android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btnStat"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:backgroundTint="@color/white"
+            android:layout_marginBottom="30dp"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@id/btnPrev"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvScore"
+            app:layout_constraintVertical_bias=".5"/>
+
+
+    <Button
+        android:id="@+id/btnPrev"
+        android:background="@drawable/lavender_border"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/stats"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/btnBack"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnStat"
+        app:layout_constraintVertical_bias=".9"
+        android:onClick="ViewPrevious"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="GoBack"
+        android:padding="5dp"
+        android:text="@string/back"
+        android:layout_marginTop="20dp"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@id/btnPrev"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

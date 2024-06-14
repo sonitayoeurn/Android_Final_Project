@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Relative layout for Splash screen components -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    tools:context="com.sonitayoeurn.card_quiz_game_tilloop1.SplashScreen">
+
+<!--    The image which will come sliding from top-->
+
+    <ImageView
+        android:id="@+id/logo_id"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="390dp"
+        android:src="@drawable/bee_splash_foreground"/>
+
+<!--    Text displayed below image-->
+
+    <!--    The welcome message-->
+
+    <TextView
+        android:id="@+id/welcome_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_id"
+        android:layout_gravity="center"
+        android:layout_marginTop="-410dp"
+        android:text="@string/welcome_msg"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_id"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="90dp"
+        android:text="@string/welcome_desc"
+        android:layout_marginTop="-350dp"
+        android:textSize="15dp"
+        android:textColor="@color/blue"/>
+
+<!--    Developer details-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_id"
+        android:layout_marginTop="-360dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="130dp"
+        android:text="@string/created_by"
+        android:textSize="15dp"
+        android:textColor="@color/blue"/>
+
+</RelativeLayout>

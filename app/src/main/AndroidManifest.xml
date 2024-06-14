@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.card_quiz_game_tilloop1">
+
+<!--    All App Activities are defined here-->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/quiz_logo_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/quiz_logo_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Card_quiz_game_tilloop1">
+        <activity android:name="com.sonitayoeurn.card_quiz_game_tilloop1.ShowResult"></activity>
+        <activity android:name="com.sonitayoeurn.card_quiz_game_tilloop1.ScoreStats"></activity>
+        <activity android:name="com.sonitayoeurn.card_quiz_game_tilloop1.Quiz" />
+        <activity android:name="com.sonitayoeurn.card_quiz_game_tilloop1.GameRules" />
+        <activity android:name="com.sonitayoeurn.card_quiz_game_tilloop1.Login" />
+        <activity android:name="com.sonitayoeurn.card_quiz_game_tilloop1.Register" />
+<!--        The launcher activity-->
+        <activity android:name="com.sonitayoeurn.card_quiz_game_tilloop1.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sonitayoeurn.card_quiz_game_tilloop1.MainActivity" />
+    </application>
+
+</manifest>
